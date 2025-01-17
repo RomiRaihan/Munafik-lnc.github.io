@@ -1,0 +1,11 @@
+Model Information:
+* title:	TShirt Basic Marvelous
+* source:	https://sketchfab.com/3d-models/tshirt-basic-marvelous-61ac2653467c4ac688a4a05af7844a55
+* author:	NairoDraw (https://sketchfab.com/NairoDraw)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "TShirt Basic Marvelous" (https://sketchfab.com/3d-models/tshirt-basic-marvelous-61ac2653467c4ac688a4a05af7844a55) by NairoDraw (https://sketchfab.com/NairoDraw) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

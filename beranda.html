@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/beranda.css" />
+    <link rel="stylesheet" href="icon/css/all.css" /> 
+    <script type="text/javascript"
+    src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="SB-Mid-client-o3Ll44-BSqFE5DUR"></script>
+     <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- start navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="logo.png"
+            ><img src="img/LG.png" alt="Logo" class="logo-img"
+          /></a>
+        </div>
+        <div class="navbar-nav">
+          <a href="beranda.html">Home</a>
+          <a href="produk.html">Produk</a>
+          <a href="status.html">Status</a>
+        </div>
+        <!-- hamburger menu -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars bar" ></i>
+          <i class="fa-solid fa-xmark x" ></i>
+        </div>
+        <!-- search-box -->
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="" />
+          <button type="reset" id="search-btn"></button>
+        </div>
+        <!-- shoping-cart -->
+        <div class="shop" id="shop">
+          <i class="fa-solid fa-cart-plus fa-xl shop"></i>
+          <span class="cart-count">0</span> <!-- Elemen untuk menampilkan jumlah barang -->
+        </div>
+        
+        <div class="shoping-cart">
+          <h1>Shopping Cart</h1>
+          <p class="total-items"> Items</p>
+          
+          <div class="cart">
+            <div class="cart-items">
+            </div>
+            <div class="total-price">
+              <p>Total: <span id="total-price">Rp 0</span></p>
+            </div> 
+            <button id="checkout-button" class="chekout">Checkout</button>
+            <button class="back-to-shop">Back to shop</button>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+    </header>
+    <!-- start main -->
+    <main>
+      <!-- carousel -->
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <img src="img/wallpaper.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/R.jpg" alt="" />
+          </div>
+        </div>
+        <button class="prev-btn">◀</button>
+        <button class="next-btn">▶</button>
+      </div>
+      <!-- start konten1 -->
+      <div class="konten1">
+      <section class="merk" id="merk">
+        <div class="pilihan">
+          <!-- produk1 -->
+          <div class="produck" data-name="paket A" >
+            <img src="img/BAJU3.png" alt="Card Image" class="img" />
+            <div class="content">
+              <h3>paket A</h3>
+              <h4>IDR 00000</h4>
+              <button class="card-btn" data-id="cctv1">DETAIL</button>
+            </div>
+          </div>
+<!-- produk2 -->
+          <div class="produck" data-name="paket B">
+            <img src="img/BAJU1.png" alt="Card Image" class="img" />
+            <div class="content">
+              <h3>paket B</h3>
+              <h4>IDR 00000</h4>
+              <button class="card-btn" data-id="cctv2">DETAIL</button>
+            </div>
+          </div>
+          <!-- produk3 -->
+          <div class="produck" data-name="paket C">
+            <img src="img/BAJU2.png" alt="Card Image" class="img" />
+            <div class="content">
+              <h3>paket C</h3>
+              <h4>IDR 00000</h4>
+              <button class="card-btn" data-id="cctv3">DETAIL</button>
+            </div>
+          </div>
+          <!-- produk4 -->
+          <div class="produck" data-name="paket D">
+            <img src="img/BAJU3.png" alt="Card Image" class="img" />
+            <div class="content">
+              <h3>paket D</h3>
+              <h4>IDR 00000</h4>
+              <button class="card-btn" data-id="cctv4">DETAIL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end konten1 -->
+    </main>
+    <!-- end main -->
+     <!-- start footer -->
+     <footer>
+       <div class="social">
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+        </div>
+        <div class="credit">
+          <p>credit by <a href="">RomiRaihan</a>. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+     <!-- start konten2 -->
+     <!-- produk1 -->
+    <section class="produk" id="cctv1">
+      <div class="produk-kontener">
+        <i
+        class="fa-solid fa-xmark close-x"
+        id="close"
+        ></i>
+        <div class="konten-produk">
+          <div class="dmodel" id="model-1"></div>
+          <div class="deskripsi-produk">
+            <h2>DETAIL PAKET</h2>
+            <div class="model-selector">
+              <button class="model-nike" id="model-nike1">1</button>
+              <button class="model-nike" id="model-nike2">2</button>
+              <button class="model-nike" id="model-nike3">3</button>
+              <button class="model-nike" id="model-nike4">4</button>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="S" /> S
+              </label>
+              <label>
+                <input type="radio" name="size" value="M" /> M
+              </label>
+              <label>
+                <input type="radio" name="size" value="L" /> L
+              </label>
+              <label>
+                <input type="radio" name="size" value="XL" /> XL
+              </label>
+            </div>
+            <div class="Detail">
+            <p>Detail deskripssadas
+              asdasdasd
+              asdasdasdasasdadasdasd
+              
+              asdasdasdasasdadasdasdasdas
+              a
+              sdasdasdasasdad
+              a
+              asdsasldkasjd gsucshdais]
+              chasihihasdidhiashihasihdihs
+              aidhsishdiuhaihuisd
+              iasdihashhasidhiashdisudh
+              uahdisaidhsdasdasdasasd
+              sdadasdasdasdasdasd
+              asdasdassdds
+              dsadasdi produk di sini...</p>
+              <p>jlkajsdljlkasdjkasjdljaslkjksadj
+                jkhasjkdhkashdkashkhasdkhkashkashksdh
+                khaskdhasjkhjkshkhsdkhasdjk
+              </p>
+            <p>Harga: <span id="harga-produk">Rp. 500.000</span></p>
+            ></div>
+            <div class="btn"> 
+              <div class="quantity-controls">
+              <button class="decrease-qty" data-index="${index}">-</button>
+              <span>
+                <input id="jumlah-produk" type="number" value="1" min="1" />
+              </span>
+              <button class="increase-qty" data-index="${index}">+</button>
+            </div>
+              <button
+                class="add-to-cart"
+                data-name="adidas"
+                data-price="60000"
+                data-img="img/wifi.png"
+              >
+                Tambahkan ke Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk2 -->
+    <section class="produk" id="cctv2">
+      <div class="produk-kontener">
+        <i
+        class="fa-solid fa-xmark close-x"
+        id="close"
+        ></i>
+        <div class="konten-produk">
+          <div class="dmodel" id="model-2"></div>
+          <div class="deskripsi-produk">
+            <h2>DETAIL PAKET</h2>
+            <div class="model-selector">
+              <button class="model-nike" id="model-nike1">1</button>
+              <button class="model-nike" id="model-nike2">2</button>
+              <button class="model-nike" id="model-nike3">3</button>
+              <button class="model-nike" id="model-nike4">4</button>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="S" /> S
+              </label>
+              <label>
+                <input type="radio" name="size" value="M" /> M
+              </label>
+              <label>
+                <input type="radio" name="size" value="L" /> L
+              </label>
+              <label>
+                <input type="radio" name="size" value="XL" /> XL
+              </label>
+            </div>
+            <div class="Detail">
+            <p>Detail deskripssadas
+              asdasdasd
+              asdasdasdasasdadasdasd
+              
+              asdasdasdasasdadasdasdasdas
+              a
+              sdasdasdasasdad
+              a
+              asdsasldkasjd gsucshdais]
+              chasihihasdidhiashihasihdihs
+              aidhsishdiuhaihuisd
+              iasdihashhasidhiashdisudh
+              uahdisaidhsdasdasdasasd
+              sdadasdasdasdasdasd
+              asdasdassdds
+              dsadasdi produk di sini...</p>
+              <p>jlkajsdljlkasdjkasjdljaslkjksadj
+                jkhasjkdhkashdkashkhasdkhkashkashksdh
+                khaskdhasjkhjkshkhsdkhasdjk
+              </p>
+            <p>Harga: <span id="harga-produk">Rp. 500.000</span></p>
+            ></div>
+            <div class="btn"> 
+              <div class="quantity-controls">
+              <button class="decrease-qty" data-index="${index}">-</button>
+              <span>
+                <input id="jumlah-produk" type="number" value="1" min="1" />
+              </span>
+              <button class="increase-qty" data-index="${index}">+</button>
+            </div>
+              <button
+                class="add-to-cart"
+                data-name="nike"
+                data-price="50000"
+                data-img="img/wifi.png"
+              >
+                Tambahkan ke Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk3 -->
+    <section class="produk" id="cctv3">
+      <div class="produk-kontener">
+        <i
+        class="fa-solid fa-xmark close-x"
+        id="close"
+        ></i>
+        <div class="konten-produk">
+          <div class="dmodel" id="model-3"></div>
+          <div class="deskripsi-produk">
+            <h2>DETAIL PAKET</h2>
+            <div class="model-selector">
+              <button class="model-nike" id="model-nike1">1</button>
+              <button class="model-nike" id="model-nike2">2</button>
+              <button class="model-nike" id="model-nike3">3</button>
+              <button class="model-nike" id="model-nike4">4</button>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="S" /> S
+              </label>
+              <label>
+                <input type="radio" name="size" value="M" /> M
+              </label>
+              <label>
+                <input type="radio" name="size" value="L" /> L
+              </label>
+              <label>
+                <input type="radio" name="size" value="XL" /> XL
+              </label>
+            </div>
+            <div class="Detail">
+            <p>Detail deskripssadas
+              asdasdasd
+              asdasdasdasasdadasdasd
+              
+              asdasdasdasasdadasdasdasdas
+              a
+              sdasdasdasasdad
+              a
+              asdsasldkasjd gsucshdais]
+              chasihihasdidhiashihasihdihs
+              aidhsishdiuhaihuisd
+              iasdihashhasidhiashdisudh
+              uahdisaidhsdasdasdasasd
+              sdadasdasdasdasdasd
+              asdasdassdds
+              dsadasdi produk di sini...</p>
+              <p>jlkajsdljlkasdjkasjdljaslkjksadj
+                jkhasjkdhkashdkashkhasdkhkashkashksdh
+                khaskdhasjkhjkshkhsdkhasdjk
+              </p>
+            <p>Harga: <span id="harga-produk">Rp. 500.000</span></p>
+            ></div>
+            <div class="btn"> 
+              <div class="quantity-controls">
+              <button class="decrease-qty" data-index="${index}">-</button>
+              <span>
+                <input id="jumlah-produk" type="number" value="1" min="1" />
+              </span>
+              <button class="increase-qty" data-index="${index}">+</button>
+            </div>
+              <button
+                class="add-to-cart"
+                data-name="bloods"
+                data-price="45000"
+                data-img="img/wifi.png"
+              >
+                Tambahkan ke Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk4 -->
+    <section class="produk" id="cctv4">
+      <div class="produk-kontener">
+        <i
+        class="fa-solid fa-xmark close-x"
+        id="close"
+        ></i>
+        <div class="konten-produk">
+          <div class="dmodel" id="model-4"></div>
+          <div class="deskripsi-produk">
+            <h2>DETAIL PAKET</h2>
+            <div class="model-selector">
+              <button class="model-nike" id="model-nike1">1</button>
+              <button class="model-nike" id="model-nike2">2</button>
+              <button class="model-nike" id="model-nike3">3</button>
+              <button class="model-nike" id="model-nike4">4</button>
+            </div>
+            <div class="sizes">
+              <label>
+                <input type="radio" name="size" value="S" /> S
+              </label>
+              <label>
+                <input type="radio" name="size" value="M" /> M
+              </label>
+              <label>
+                <input type="radio" name="size" value="L" /> L
+              </label>
+              <label>
+                <input type="radio" name="size" value="XL" /> XL
+              </label>
+            </div>
+            <div class="Detail">
+            <p>Detail deskripssadas
+              asdasdasd
+              asdasdasdasasdadasdasd
+              
+              asdasdasdasasdadasdasdasdas
+              a
+              sdasdasdasasdad
+              a
+              asdsasldkasjd gsucshdais]
+              chasihihasdidhiashihasihdihs
+              aidhsishdiuhaihuisd
+              iasdihashhasidhiashdisudh
+              uahdisaidhsdasdasdasasd
+              sdadasdasdasdasdasd
+              asdasdassdds
+              dsadasdi produk di sini...</p>
+              <p>jlkajsdljlkasdjkasjdljaslkjksadj
+                jkhasjkdhkashdkashkhasdkhkashkashksdh
+                khaskdhasjkhjkshkhsdkhasdjk
+              </p>
+            <p>Harga: <span id="harga-produk">Rp. 500.000</span></p>
+            ></div>
+            <div class="btn"> 
+              <div class="quantity-controls">
+              <button class="decrease-qty" data-index="${index}">-</button>
+              <span>
+                <input id="jumlah-produk" type="number" value="1" min="1" />
+              </span>
+              <button class="increase-qty" data-index="${index}">+</button>
+            </div>
+              <button
+                class="add-to-cart"
+                data-name="Munafik=lnc"
+                data-price="40000"
+                data-img="img/wifi.png"
+              >
+                Tambahkan ke Keranjang
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- payment -->
+    <section class="payment" id="payment">
+      <div class="produk-kontener">
+        <i class="fa-solid fa-xmark close-x" id="close-payment"></i>
+        <div class="konten-produk">
+          <h2>PEMBAYARAN</h2>
+          <div class="input">
+            <form action="" id="checkout-form" class="form">
+              <div class="form__group field">
+                <input type="text" name="name" id="name"  placeholder="Name" class="form__field" />
+                <label class="form__label" for="name">Nama</label>
+              </div>
+              <div class="form__group field">
+                <input type="email" name="email" id="email" placeholder="E-Mail" class="form__field" />
+                <label class="form__label" for="email">E-Mail</label>
+              </div>
+              <div class="form__group field">
+                <input type="tel" name="phone" id="phone" placeholder="Phone" class="form__field" pattern="08[0-9]{8,10}" autocomplete="off" />
+                <label class="form__label" for="phone">No Hp</label>
+              </div>
+              <div class="form__group field">
+                <input type="text" name="address" id="address" placeholder="Address" class="form__field" />
+                <label class="form__label" for="address">Alamat</label>
+              </div>
+            </form>
+            <div class="dipilih">
+              <div class="items-dipilih">
+                
+              </div>
+            </div>
+            <label for="total-price">Total Harga: <span class="dibayar" id="dibayar">Rp. 0</span></label>
+            <button type="submit" class="paybutton disable" id="paybutton" value="pay">Bayar Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- link js -->
+    <script type="module" src="./js/main.js"></script>
+    <script src="js/beranda.js"></script>
+  </body>
+  </html>
+  
+ 

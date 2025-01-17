@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tshirt Test
+* source:	https://sketchfab.com/3d-models/tshirt-test-34b001f315fd4565b7299813ec059ef6
+* author:	lukedew99 (https://sketchfab.com/lukedew99)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tshirt Test" (https://sketchfab.com/3d-models/tshirt-test-34b001f315fd4565b7299813ec059ef6) by lukedew99 (https://sketchfab.com/lukedew99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

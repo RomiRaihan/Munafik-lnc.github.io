@@ -1,0 +1,11 @@
+Model Information:
+* title:	hoodie_Tshirt
+* source:	https://sketchfab.com/3d-models/hoodie-tshirt-38ad4487ddf84efbaf8cf650463cb8bf
+* author:	artem4er5y (https://sketchfab.com/artem4er5y)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "hoodie_Tshirt" (https://sketchfab.com/3d-models/hoodie-tshirt-38ad4487ddf84efbaf8cf650463cb8bf) by artem4er5y (https://sketchfab.com/artem4er5y) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

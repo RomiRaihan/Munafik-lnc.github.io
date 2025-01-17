@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tshirt Lebedev4
+* source:	https://sketchfab.com/3d-models/tshirt-lebedev4-b624925b7b1142db95e90314c1810d5f
+* author:	dispeed7 (https://sketchfab.com/dispeed7)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tshirt Lebedev4" (https://sketchfab.com/3d-models/tshirt-lebedev4-b624925b7b1142db95e90314c1810d5f) by dispeed7 (https://sketchfab.com/dispeed7) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
