@@ -4,10 +4,10 @@ import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/
 
 // Define models and their paths
 const models = {
-  "model-1": "img/baju10/baju.gltf", // Model 1
-  "model-2": "img/baju4/baju4.gltf", // Model 2
-  "model-3": "img/bajunike.glb", // Model 3
-  "model-4": "img/baju2/baju2.gltf", // Model 4
+  "model-1": "img/baju1.glb", // Model 1
+  "model-2": "img/baju1.glb", // Model 2
+  "model-3": "img/baju1.glb", // Model 3
+  "model-4": "img/baju1.glb", // Model 4
 };
 
 // Wait until the document is fully loaded
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.background = new THREE.Color(0xf0f0f0);
 
   const camera = new THREE.PerspectiveCamera(
-    75,
+    10,
     viewer.clientWidth / viewer.clientHeight,
     0.1,
     1000
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.background = new THREE.Color(0xf0f0f0);
 
   const camera = new THREE.PerspectiveCamera(
-    75,
+    10,
     viewer.clientWidth / viewer.clientHeight,
     0.1,
     1000
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.background = new THREE.Color(0xf0f0f0);
 
   const camera = new THREE.PerspectiveCamera(
-    75,
+    10,
     viewer.clientWidth / viewer.clientHeight,
     0.1,
     1000
@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scene.background = new THREE.Color(0xf0f0f0);
 
   const camera = new THREE.PerspectiveCamera(
-    75,
+    10,
     viewer.clientWidth / viewer.clientHeight,
     0.1,
     1000
